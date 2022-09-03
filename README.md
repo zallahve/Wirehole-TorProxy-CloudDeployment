@@ -23,7 +23,7 @@ WireHole is a combination of WireGuard, PiHole, and Unbound in a docker-compose 
 
 ## Creating Tor Proxy
 
-
+![Diagram](00-1.png)
 
 
 ## Auto Deployment in the Cloud
