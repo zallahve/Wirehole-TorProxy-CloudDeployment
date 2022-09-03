@@ -1,4 +1,4 @@
-# Wirehole in Cloud
+# Wirehole & TorProxy in Cloud
 
 ## Abstract:
 
@@ -34,7 +34,7 @@ Combines wireguard (DNS VPN), pihole (adblock), and cloudflared (DNS over HTTPS)
 
 ![Diagram](diagram.png)
 
-# Instructions
+## Instructions
 Several deployment options are available, see the README of each subdirectory for platform-specific guides.
 - AWS (Amazon)
 - Azure (Microsoft)
