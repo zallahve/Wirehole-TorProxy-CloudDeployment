@@ -37,3 +37,20 @@ Ideally, you’ll want to set this as a reserved (fixed) IP for this machine via
 
 
 ## Auto Deployment in the Cloud
+# Overview
+End-to-end DNS encryption with DNS-based ad-blocking, built in the cloud automatically using Terraform with Ansible. Choose your cloud provider or a standalone installation.
+
+Combines wireguard (DNS VPN), pihole (adblock), and cloudflared (DNS over HTTPS) docker containers, as visualized:
+
+![Diagram](diagram.png)
+
+# Instructions
+Several deployment options are available, see the README of each subdirectory for platform-specific guides.
+- AWS (Amazon)
+- Azure (Microsoft)
+- DO (Digital Ocean)
+- GCP (Google)
+- Lightsail (Fixed-rate/Low-cost AWS)
+- OCI (Oracle)
+- SCW (Scaleway)
+- Standalone Raspberry Pi or Ubuntu Server (under playbooks/)
