@@ -1,8 +1,8 @@
-# PiVPN-PiHole-Unbound-TorProxy 
+# PiVPN-PiHole-Unbound-TorProxy-Insights
 
 ## Abstract:
 
-
+This project is centered around getting a Raspberry Pi set up on a simple home network in order to block ads and naughty DNS requests, secure the DNS requests of all devices on the network, and provide a VPN solution for when any of these devices are outside of the network and would like to take advantage of the security (and speed) benefits of the network remotely.There are several guides written about this or similar setups, but in practice, there was always something missing or assumptions were made about certain steps in the process. This guide is meant to shed some light on those steps, simplify the process of getting set up, and explain my findings in order to help anyone else trying to do the same.
 
 ## Initial Set-up
 
