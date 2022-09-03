@@ -26,8 +26,8 @@ WireHole is a combination of WireGuard, PiHole, and Unbound in a docker-compose 
 ![Diagram](00-1.png)
 
 
-## Auto Deployment in the Cloud
-# Overview
+# Auto Deployment in the Cloud
+
 End-to-end DNS encryption with DNS-based ad-blocking, built in the cloud automatically using Terraform with Ansible. Choose your cloud provider or a standalone installation.
 
 Combines wireguard (DNS VPN), pihole (adblock), and cloudflared (DNS over HTTPS) docker containers, as visualized:
