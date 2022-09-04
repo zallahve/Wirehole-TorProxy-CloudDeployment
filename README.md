@@ -1,7 +1,5 @@
 # Wirehole & TorProxy in Cloud
 
-## Abstract:
-
 This project is centered around getting a Raspberry Pi set up on a simple home network in order to block ads and DNS requests, secure the DNS requests of all devices on the network, and provide a VPN solution for when any of these devices are outside of the network and would like to take advantage of the security (and speed) benefits of the network remotely.There are several guides written about this or similar setups, but in practice, there was always something missing or assumptions were made about certain steps in the process. Instead of coming up with another guidline I have decided to automate lengthy installation process.
 
 ![Diagram](wirehole.png)
