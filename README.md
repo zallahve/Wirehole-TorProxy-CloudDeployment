@@ -15,7 +15,7 @@ Finally, we will see how we can bring Wirehole with dedicated Tor proxy to Cloud
 To get started all you need to do is clone the repository and spin up the containers.
 
 ```bash
-git clone https://github.com/IAmStoxe/wirehole.git
+git clone https://github.com/zallahve/wirehole.git
 cd wirehole
 docker-compose up
 ```
@@ -49,7 +49,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-
     sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 # wirehole
-git clone https://github.com/IAmStoxe/wirehole.git &&
+git clone https://github.com/zallahve/wirehole.git &&
     cd wirehole &&
     docker-compose up
 
@@ -353,15 +353,6 @@ Both of these approaches have positives and negatives however their setup is out
 
 ![Insfrastructure model](.infragenie/infrastructure_model.png)
 
-## Installing Pi-Hole
-
-
-
-## Setting-up Unbound
-
-
-
-## Installing Wireguard VPN
 
 
 
