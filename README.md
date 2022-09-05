@@ -373,15 +373,18 @@ Both of these approaches have positives and negatives however their setup is out
 
 Before you begin, it’s a good idea to check that you’re running the latest version of Raspberry Pi OS. Open the Terminal and type the following command:
 
+```
 sudo apt update && sudo apt -y upgrade
+```
 If it does install one or more updates, then reboot your Raspberry Pi by running the following command:
 
 sudo reboot
 Install Tor on your Raspberry Pi
 You can install Tor using a single Terminal command:
 
+```
 sudo apt install tor
-
+```
 
 
 
