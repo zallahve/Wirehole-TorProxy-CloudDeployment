@@ -385,6 +385,45 @@ You can install Tor using a single Terminal command:
 ```
 sudo apt install tor
 ```
+You’ll now have two new services running on your Raspberry Pi: tor.service and tor@default.service.
+
+The “tor” service is merely a dummy service that only appears active. To check that the real tor@default service is running, use the following Terminal command:
+
+```
+sudo systemctl status tor@default.service
+```
+
+If the Terminal returns an “active” message, you’re ready to move on to the next step.
+
+Set up your proxy server by making some changes to Tor’s configuration file. Before editing this “torr” file, it’s a good idea to create a backup:
+```
+sudo cp /etc/tor/torrc /etc/tor/torrc.backup
+```
+Now that you have a backup, create a simple configuration that’ll expose the Tor Socks proxy service on port 9050 and accept connections from the local LAN.
+
+o open the “torr” configuration file for editing, run the following command:
+```
+sudo nano /etc/tor/torrc
+```
+This file will now launch in the Nano text editor. First, specify the “SocksPort,” which is the IP address of your Raspberry Pi. You can retrieve this information by running the following Terminal command:
+
+hostname -I
+Take this IP address and add the port number :9050. For example, if the Raspberry Pi’s IP address is 192.168.1.111, then add the following to the Torr configuration file:
+
+SocksPort 192.168.1.111:9050
+Add the following to the Nano text editor, making sure to replace “SocksPort” with your own value:
+
+SocksPort 192.168.1.100:9050
+SocksPolicy accept 192.168.1.0/24
+RunAsDaemon 1
+DataDirectory /var/lib/tor
+Once you’ve made the changes, save the file by pressing the Ctrl + O and Ctrl + X to close.
+
+To restart the Tor service with your new configuration, run the following command:
+```
+sudo systemctl restart tor@default.service
+```
+
 
 
 
