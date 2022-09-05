@@ -464,10 +464,38 @@ In the accompanying text box, enter the port number “9050.”
 Save your changes by clicking “OK -> Apply.”
 Close and then relaunch Chrome. When it relaunches, it should already be using the Tor network.
 
+## Apple Safari
+If you’re using Apple’s Safari browser, then:
+
+1. In the Safari toolbar, select “Safari -> Preferences … ”
+
+2. Select the “Advanced” tab.
+
+3. Find “Proxies” and select its accompanying “Change Settings … ” button.
+
+4. In the menu on the left, select “SOCKS Proxy.”
+
+5. In “SOCKS Proxy Server,” enter the IP address of your Raspberry Pi.
+
+6. In the accompanying text field, enter the port number “9050.”
+
+7. Save your changes by clicking “OK -> Apply.”
 
 
 
 
+
+Don’t forget to relaunch Safari!
+
+Are you really using Tor?
+If you’ve followed the instructions in this article, then you should now be using the Tor network – but it never hurts to check! In the web browser that you’ve configured to use Tor, head over to the Tor website.
+
+![Diagram](tor-proxy-with-raspberry-pi-are-you-anonymous.png.webp)
+
+
+
+
+If you see the above message, then congratulations – you’re successfully routing all of your traffic via Tor!
 
 
 
