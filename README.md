@@ -11,6 +11,22 @@ In addition, for extra privacy we will add Tor proxy server to our Wirehole. Tor
 
 Finally, we will see how we can bring Wirehole with dedicated Tor proxy to Cloud. We will deploy Wireguard VPN, Pi-Hole DNS Ad-blocking, and Tor proxy over HTTPS in a cloud provider - or locally - using Terraform and Ansible.
 
+
+
+## What you’ll need
+
+Raspberry Pi that’s running Raspberry Pi OS
+Power cable that’s compatible with your Raspberry Pi.
+External keyboard and a way to attach it to your Raspberry Pi
+HDMI or micro HDMI cable, depending on your model of Raspberry Pi
+External monitor
+Ethernet cable if not connecting over Wi-Fi
+
+
+
+
+
+
 ## Quickstart
 To get started all you need to do is clone the repository and spin up the containers.
 
@@ -347,19 +363,27 @@ Both of these approaches have positives and negatives however their setup is out
 
 ###### Shout out to LinuxServer.io for their documentation and maintenance of the incredible Wireguard image.
 
---- 
-
-### Infrastructure model
-
-![Insfrastructure model](.infragenie/infrastructure_model.png)
 
 
 
 
-
-## Creating Tor Proxy
+# Creating Tor Proxy
 
 ![Diagram](00-1.png)
+
+Before you begin, it’s a good idea to check that you’re running the latest version of Raspberry Pi OS. Open the Terminal and type the following command:
+
+sudo apt update && sudo apt -y upgrade
+If it does install one or more updates, then reboot your Raspberry Pi by running the following command:
+
+sudo reboot
+Install Tor on your Raspberry Pi
+You can install Tor using a single Terminal command:
+
+sudo apt install tor
+
+
+
 
 
 # Auto Deployment in the Cloud
