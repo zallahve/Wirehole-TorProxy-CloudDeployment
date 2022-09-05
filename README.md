@@ -431,7 +431,7 @@ In this final section, you’ll learn how to connect to your Raspberry Pi server
 
 Note that you’ll typically connect to your Raspberry Pi using its IP address. You can retrieve this information at any point by running hostname -I in the Raspberry Pi Terminal.
 
-![Diagram](tor-proxy-with-raspberry-pi-google-chrome-macos.png.webp)
+![Diagram]
 
 Google Chrome (and other Chromium-based browsers)
 Are you using Chrome? To point Google Chrome in the direction of your proxy server:
@@ -455,7 +455,7 @@ Select “SOCKS Proxy.”
 
 
 
-![Diagram](tor_proxy_pi_chrome.png)
+![Diagram](tor-proxy-with-raspberry-pi-google-chrome-macos.png.webp)
 
 
 If you're a Mac user, then you'll need to edit macOS' "Network" settings.
