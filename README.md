@@ -406,23 +406,66 @@ o open the “torr” configuration file for editing, run the following command:
 sudo nano /etc/tor/torrc
 ```
 This file will now launch in the Nano text editor. First, specify the “SocksPort,” which is the IP address of your Raspberry Pi. You can retrieve this information by running the following Terminal command:
-
+```
 hostname -I
+```
 Take this IP address and add the port number :9050. For example, if the Raspberry Pi’s IP address is 192.168.1.111, then add the following to the Torr configuration file:
-
+```
 SocksPort 192.168.1.111:9050
+```
 Add the following to the Nano text editor, making sure to replace “SocksPort” with your own value:
-
+```
 SocksPort 192.168.1.100:9050
 SocksPolicy accept 192.168.1.0/24
 RunAsDaemon 1
 DataDirectory /var/lib/tor
+```
 Once you’ve made the changes, save the file by pressing the Ctrl + O and Ctrl + X to close.
 
 To restart the Tor service with your new configuration, run the following command:
 ```
 sudo systemctl restart tor@default.service
 ```
+
+In this final section, you’ll learn how to connect to your Raspberry Pi server, using all the major web browsers.
+
+Note that you’ll typically connect to your Raspberry Pi using its IP address. You can retrieve this information at any point by running hostname -I in the Raspberry Pi Terminal.
+
+![Diagram](tor_proxy_pi_chrome.png)
+
+Google Chrome (and other Chromium-based browsers)
+Are you using Chrome? To point Google Chrome in the direction of your proxy server:
+
+1. In Chrome’s upper-right corner, select the three-dot icon.
+
+2. Select “Settings.”
+
+3. In the menu on the left, navigate to “Advanced -> System.”
+
+Using Google Chrome? You can edit its proxy settings, in the "Advanced > System" menu.
+4. Select “Open your computer’s proxy settings.”
+
+The next steps will vary, depending on your operating system.
+
+macOS
+
+If you’re a Mac user, then Google Chrome should have already launched your Mac’s “Network -> Proxies” menu. In this window:
+
+Select “SOCKS Proxy.”
+
+
+
+![Diagram](tor_proxy_pi_chrome.png)
+
+
+If you're a Mac user, then you'll need to edit macOS' "Network" settings.
+In “SOCKS Proxy Server,” enter the IP address of your Raspberry Pi.
+In the accompanying text box, enter the port number “9050.”
+Save your changes by clicking “OK -> Apply.”
+Close and then relaunch Chrome. When it relaunches, it should already be using the Tor network.
+
+
+
 
 
 
