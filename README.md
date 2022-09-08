@@ -431,7 +431,7 @@ In this final section, you’ll learn how to connect to your Raspberry Pi server
 
 Note that you’ll typically connect to your Raspberry Pi using its IP address. You can retrieve this information at any point by running hostname -I in the Raspberry Pi Terminal.
 
-![Diagram](tor-proxy-with-raspberry-pi-google-chrome.png.webp) 
+![Diagram](torproxy_img/tor-proxy-with-raspberry-pi-google-chrome.png.webp) 
 
 Google Chrome (and other Chromium-based browsers)
 Are you using Chrome? To point Google Chrome in the direction of your proxy server:
