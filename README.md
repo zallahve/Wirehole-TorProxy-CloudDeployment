@@ -490,7 +490,7 @@ Don’t forget to relaunch Safari!
 Are you really using Tor?
 If you’ve followed the instructions in this article, then you should now be using the Tor network – but it never hurts to check! In the web browser that you’ve configured to use Tor, head over to the Tor website.
 
-![Diagram](tor-proxy-with-raspberry-pi-are-you-anonymous.png.webp)
+![Diagram](torproxy_img/tor-proxy-with-raspberry-pi-are-you-anonymous.png.webp)
 
 
 
@@ -505,7 +505,7 @@ End-to-end DNS encryption with DNS-based ad-blocking, built in the cloud automat
 
 Combines wireguard (DNS VPN), pihole (adblock), and cloudflared (DNS over HTTPS) docker containers, as visualized:
 
-![Diagram](torproxy_img/diagram.png)
+![Diagram](diagram.png)
 
 ## Instructions
 Several deployment options are available, see the README of each subdirectory for platform-specific guides.
