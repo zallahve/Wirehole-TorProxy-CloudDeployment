@@ -2,7 +2,7 @@
 
 This project is centered around getting a Raspberry Pi set up on a simple home network in order to block ads and DNS requests, secure the DNS requests of all devices on the network, and provide a VPN solution for when any of these devices are outside of the network and would like to take advantage of the security (and speed) benefits of the network remotely.There are several guides written about this or similar setups, but in practice, there was always something missing or assumptions were made about certain steps in the process. Instead of coming up with another guidline I have decided to automate lengthy installation process.
 
-![Diagram](wirehole.png)
+![Diagram](wirehole_img/wirehole.png)
 
 
 WireHole is a combination of WireGuard, PiHole, and Unbound in a docker-compose project with the intent of enabling users to quickly and easily create and deploy a personally managed full or split-tunnel WireGuard VPN with ad blocking capabilities (via Pihole), and DNS caching with additional privacy options (via Unbound).
@@ -369,7 +369,7 @@ Both of these approaches have positives and negatives however their setup is out
 
 # Creating Tor Proxy
 
-![Diagram](00-1.png)
+![Diagram](torproxy_img/00-1.png)
 
 Before you begin, it’s a good idea to check that you’re running the latest version of Raspberry Pi OS. Open the Terminal and type the following command:
 
@@ -455,7 +455,7 @@ Select “SOCKS Proxy.”
 
 
 
-![Diagram](tor-proxy-with-raspberry-pi-google-chrome-macos.png.webp)
+![Diagram](torproxy_img/tor-proxy-with-raspberry-pi-google-chrome-macos.png.webp)
 
 
 If you're a Mac user, then you'll need to edit macOS' "Network" settings.
@@ -505,7 +505,7 @@ End-to-end DNS encryption with DNS-based ad-blocking, built in the cloud automat
 
 Combines wireguard (DNS VPN), pihole (adblock), and cloudflared (DNS over HTTPS) docker containers, as visualized:
 
-![Diagram](diagram.png)
+![Diagram](torproxy_img/diagram.png)
 
 ## Instructions
 Several deployment options are available, see the README of each subdirectory for platform-specific guides.
