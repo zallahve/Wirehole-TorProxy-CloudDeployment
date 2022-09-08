@@ -222,6 +222,13 @@ The templates used for server and peer confs are saved under `/config/templates`
 
 ---
 
+
+
+
+
+
+
+
 ## Modifying the upstream DNS provider for Unbound
 If you choose to not use Cloudflare any reason you are able to modify the upstream DNS provider in `unbound.conf`.
 
@@ -241,6 +248,14 @@ forward-zone:
         forward-tls-upstream: yes
 ```
 
+
+
+
+
+
+
+
+
 ---
 
 ## Available DNS Providers
@@ -257,6 +272,18 @@ Providers they have the information for:
 5. DNS.WATCH
 6. Quad9
 7. CloudFlare DNS
+
+
+---
+
+## Visually this is what happends backstage
+
+
+
+![Diagram](wirehole_img/pihole_dns.jpg)
+
+
+
 
 
 ---
